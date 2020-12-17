@@ -8,9 +8,11 @@
 @endsection
 
 @section('contenido')
+
     <form action="{{route('siestadefinida')}}" method="POST">
-        <label for="fecha">fecha</label><br>
-        <input type="date">
+        @csrf
+        <label for="fecha">fecha</label>
+        <input type="date"><br>
         <label for="nombreProducto">Nombre del producto</label>
         <input type ="text" name="nombreProducto"><br>
         <label for="nombreCliente">Nombre del cliente</label>
@@ -20,4 +22,5 @@
         <label for="cantidad">Cantidad a vender</label>
         <input type="text" name="cantidad"><br>
         <button type="submit" class="btn btn-primary btn-block">Agregar</button>    
-@endsection
+    
+        @endsection

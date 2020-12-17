@@ -16,10 +16,9 @@
 
 
     @yield("encabezado")
-    <nav class="navbar navbar-dark bg-dark shadow-sm
-    ">
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
     <div class="navbar-brand d-flex align-items-center">
-    <a href="a" class="btn btn-secondary btn-sm">Agregar Venta</a>
+    <a href="{{route ('pedido')}}" class="btn btn-secondary btn-sm">Agregar Venta</a>
     <a href="{{route ('showClientes')}}" class="btn btn-secondary btn-sm">Clientes</a>
     <a href="{{route ('showProductos')}}" class="btn btn-secondary btn-sm">Productos</a>
   </div>  

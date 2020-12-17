@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 
@@ -25,7 +24,6 @@ class PedidoController extends Controller
             $pedido_nuevo -> nombreCliente = $request ->nombreEmpleado;
             $pedido_nuevo -> cantidad = $request ->cantidad;
             $pedido_nuevo -> save();
-            return back() -> with ('mensaje','Se ha agregado un nuevo pedido');
     }
        
        

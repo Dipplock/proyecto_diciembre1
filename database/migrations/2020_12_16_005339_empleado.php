@@ -13,7 +13,14 @@ class Empleado extends Migration
      */
     public function up()
     {
-        //
+    
+        $table -> int('idempleados');
+        $table -> string('nombre');
+        $table -> string('apellido');
+        $table -> string('especialidad');
+        $table -> int('oficina');
+        $table -> int('sueldo');
+    
     }
 
     /**

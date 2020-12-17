@@ -13,7 +13,14 @@ class Pedido extends Migration
      */
     public function up()
     {
-        //
+        $table -> date('fecha');
+        $table -> int('idproducto');
+        $table -> int('idempleado');
+        $table -> int('idcliente');
+        $table -> int('cantidad');
+    
+    
+    
     }
 
     /**

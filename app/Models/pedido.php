@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class pedido extends Model
 {
+    protected $pedido;
     use HasFactory;
 }

@@ -8,8 +8,8 @@
 @endsection
 
 @section('contenido')
-    <form action="{{route('agregar')}}" method="POST">
-        <label for="fecha">fecha</label>
+    <form action="{{route('siestadefinida')}}" method="POST">
+        <label for="fecha">fecha</label><br>
         <input type="date">
         <label for="nombreProducto">Nombre del producto</label>
         <input type ="text" name="nombreProducto"><br>
